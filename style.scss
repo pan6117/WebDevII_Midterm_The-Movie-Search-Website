@@ -1,0 +1,127 @@
+* {
+  background-color: #2e2e2e;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  //   scroll-behavior: smooth;
+
+  body {
+    font-family: "Gentium Book Plus", serif;
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      flex-wrap: wrap;
+      padding: 20px;
+      text-align: center;
+      //   border: 3px solid #333;
+
+      h1 {
+        color: #e7b420;
+      }
+
+      section {
+        button {
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 1rem;
+          border: none;
+        }
+
+        &.filter-container {
+          display: grid;
+          gap: 3px;
+
+          label {
+            font-size: 1.5rem;
+            text-align: left;
+            padding-left: 10px;
+            color: #e7b420;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            &.range-button {
+              display: grid;
+              grid-template-columns: repeat(5, 1fr);
+              gap: 5px;
+            }
+            &.reset-button {
+              width: 80%;
+            }
+            button {
+              &:hover {
+                color: #e7b420;
+              }
+              &:focus {
+                background-color: #e7b420;
+                color: white;
+              }
+            }
+          }
+        }
+
+        &.search-container {
+          input {
+            font-size: 1rem;
+            padding: 5px;
+            border: none;
+            border: 1px solid #444;
+            color: #e7b420;
+            border-radius: 5px;
+
+            &:focus {
+              border: 3px solid #e7b420;
+            }
+          }
+
+          button {
+            background-color: #e7b420;
+          }
+        }
+      }
+    }
+
+    main {
+      padding: 20px;
+      background-color: #444;
+      section {
+        background-color: #444;
+        &.main-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+
+          .movieAll {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            border-radius: 15px;
+            padding-bottom: 10px;
+
+            box-shadow: #e7b420 0px 0px 10px;
+
+            h1 {
+              background-color: #444;
+            }
+
+            img {
+              width: 100%;
+              border-top-left-radius: 15px;
+              border-top-right-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

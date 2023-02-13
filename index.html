@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <section class="filter-container">
+        <label for="">Vote Average: </label>
+        <div>
+          <div class="range-button">
+            <button id="upTo8" class="range-button" onclick="upTo8()">
+              8 Up
+            </button>
+            <button id="upTo7" onclick="upTo7()">7 Up</button>
+            <button id="upTo6" onclick="upTo6()">6 Up</button>
+            <button id="less6" onclick="less6()">Less 6</button>
+          </div>
+          <div class="reset-button">
+            <button id="reset" onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <h1>Now Playing</h1>
+
+      <section class="search-container">
+        <input
+          type="text"
+          placeholder="Search for a movie"
+          id="search-keyword"
+        />
+        <button onclick="searchMovies()">Search</button>
+      </section>
+    </header>
+
+    <main>
+      <section id="main-container" class="main-container"></section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

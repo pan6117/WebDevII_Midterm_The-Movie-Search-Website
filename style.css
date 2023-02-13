@@ -1,0 +1,103 @@
+* {
+  background-color: #2e2e2e;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Gentium Book Plus", serif;
+}
+* body header {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: center;
+}
+* body header h1 {
+  color: #e7b420;
+}
+* body header section button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+}
+* body header section.filter-container {
+  display: grid;
+  gap: 3px;
+}
+* body header section.filter-container label {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 10px;
+  color: #e7b420;
+}
+* body header section.filter-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+* body header section.filter-container div.range-button {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+* body header section.filter-container div.reset-button {
+  width: 80%;
+}
+* body header section.filter-container div button:hover {
+  color: #e7b420;
+}
+* body header section.filter-container div button:focus {
+  background-color: #e7b420;
+  color: white;
+}
+* body header section.search-container input {
+  font-size: 1rem;
+  padding: 5px;
+  border: none;
+  border: 1px solid #444;
+  color: #e7b420;
+  border-radius: 5px;
+}
+* body header section.search-container input:focus {
+  border: 3px solid #e7b420;
+}
+* body header section.search-container button {
+  background-color: #e7b420;
+}
+* body main {
+  padding: 20px;
+  background-color: #444;
+}
+* body main section {
+  background-color: #444;
+}
+* body main section.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+* body main section.main-container .movieAll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+  box-shadow: #e7b420 0px 0px 10px;
+}
+* body main section.main-container .movieAll h1 {
+  background-color: #444;
+}
+* body main section.main-container .movieAll img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}/*# sourceMappingURL=style.css.map */
