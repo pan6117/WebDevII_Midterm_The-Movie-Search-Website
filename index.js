@@ -14,31 +14,6 @@ const webUI = (array) => {
                 <h1>${title}</h1>
                 </section>`;
   });
-  //   orignalObject.results.forEach(
-  //     ({
-  //       title,
-  //       poster_path,
-  //       release_date,
-  //       overview,
-  //       backdrop_path,
-  //       popularity,
-  //       vote_count,
-  //       vote_average,
-  //     }) => {
-  //       mainContainer.innerHTML += `
-  //         <section class="movieAll">
-  //             <h1>${title}</h1>
-  //             <img src="https://image.tmdb.org/t/p/w500/${poster_path}" alt="The ${title}'s poster">
-  //             <p>Release Date: ${release_date}</p>
-  //             <p>Overview: ${overview}</p>
-  //             <p>Popularity: ${popularity}</p>
-  //             <p>Vote Count: ${vote_count}</p>
-  //             <p>Vote Average: ${vote_average}</p>
-  //             <img src="https://image.tmdb.org/t/p/w500/${backdrop_path}" alt="The ${title}'s backdrop">
-  //         </section>
-  //     `;
-  //     }
-  //   );
 
   //   const movieName = document.createElement("h1");
   //   const movieImg = document.createElement("div");
@@ -52,19 +27,6 @@ const webUI = (array) => {
   //   });
 
   //   container.appendChild(movieName);
-};
-
-const webUISecond = (array) => {
-  const mainContainer = document.getElementById("main-container");
-  mainContainer.innerHTML = "";
-
-  array.forEach(({ title, poster_path }) => {
-    mainContainer.innerHTML += `
-              <section class="movieAll">
-                  <h1>${title}</h1>
-                  <img src="https://image.tmdb.org/t/p/w500/${poster_path}" alt="The ${title}'s poster">
-  </section>`;
-  });
 };
 
 const fetchTMDB = async () => {
@@ -138,3 +100,34 @@ function reset() {
   console.log(resetArray);
   webUI(resetArray);
 }
+
+// const webUIWindows = (array) => {
+//   const mainContainer = document.getElementById("main-container");
+//   mainContainer.innerHTML = "";
+
+//   array.forEach(
+//     ({
+//       title,
+//       poster_path,
+//       release_date,
+//       overview,
+//       backdrop_path,
+//       popularity,
+//       vote_count,
+//       vote_average,
+//     }) => {
+//       mainContainer.innerHTML += `
+//             <section class="movieWindows">
+//                 <h1>${title}</h1>
+//                 <img src="https://image.tmdb.org/t/p/w500/${poster_path}" alt="The ${title}'s poster">
+//                 <p>Release Date: ${release_date}</p>
+//                 <p>Overview: ${overview}</p>
+//                 <p>Popularity: ${popularity}</p>
+//                 <p>Vote Count: ${vote_count}</p>
+//                 <p>Vote Average: ${vote_average}</p>
+//                 <img src="https://image.tmdb.org/t/p/w500/${backdrop_path}" alt="The ${title}'s backdrop">
+//             </section>
+//         `;
+//     }
+//   );
+// };
